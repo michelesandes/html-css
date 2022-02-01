@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixa</title>
+    <style>
+        h1{
+            background-color: lightgrey;
+            height: 300px;
+            width: 300px;
+
+            /* Simplificando*/
+            /*border-width: 10px;
+            border-style: solid;
+            border-color: darkslateblue;*/
+
+            border: 10px solid darkslateblue;
+            
+            /*padding-top:10px ;
+            padding-right: 10px;
+            padding-left: 10px;
+            padding-bottom: 10px;*/
+
+            padding: /*top*/ 10px /*right*/ 10px /*botoom*/ 10px /*left*/ 10px;
+            /*obs: como todas as medidas do paading são iguais, basta informar apenas uma, que ele entenderá que todas são iguais. Quando coloca dois valores, ele tente que o top e o botoom são iguais e right e left são iguais */
+
+            /*margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;*/
+
+            margin: 20px 20px 40px 20px;
+            /*Quando colocado as lateriais, left e right, em auto, ele centraliza a caixa.*/
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: orange;
+        }
+        a{
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa de box-level</h1>
+    <p>Parágrafo também são exemplos de box-level, mas ps <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>
